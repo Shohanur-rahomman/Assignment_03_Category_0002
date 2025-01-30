@@ -1,14 +1,107 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment_03_Category_0002</title>
     <link rel="stylesheet" href="style/style.css">
+    <!--font awesome link  -->
+    <script src="https://kit.fontawesome.com/cfe160c008.js" crossorigin="anonymous"></script>
+    <!-- tailwind css link -->
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--daisyui link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google sora font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- google poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        .sora-text {
+            font-family: "Sora", serif;
+        }
+
+        .poppins-text {
+            font-family: "Poppins", serif;
+
+        }
+    </style>
+    <!-- customs color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'btn-color': '#179800',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
-    <header></header>
-    <main></main>
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
+        <!-- navbar -->
+        <section class="sora-text ">
+            <div class="md:max-w-[90%] mx-auto flex justify-between p-3 md:pt-6">
+                <div class="">
+
+                    <img class="hidden md:block lg:block" src="./c2-assets/logo-header.png" alt="">
+                    <img class="md:hidden lg:hidden w-11 h-10" src="./c2-assets/logo-2.png" alt="">
+                </div>
+                <div class=" hidden md:flex lg:flex">
+                    <ul class="menu menu-horizontal gap-8 text-xl">
+                        <li><a>Product</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="hidden md:hidden lg:block">
+                    <i class="fa-solid fa-magnifying-glass mr-6 text-2xl"></i>
+                    <i class="fa-solid fa-cart-shopping mr-8 text-2xl"></i>
+                    <button class="text-xl py-2 px-7 border border-[#179800] rounded-lg mr-3">Login</button>
+                    <button class="rounded-lg text-xl bg-btn-color text-white py-2 px-7">Register</button>
+
+                </div>
+                <div class="block md:hidden lg:hidden">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </div>
+            </div>
+        </section>
+        <!-- navbar -->
+        <!-- banner -->
+        <section class=" text-center sora-text">
+            <div class="mt-20 p-3">
+                <h2 class="text-5xl font-semibold mb-8">Freshness <span class="text-[#179800]">You Can <br> Count</span> On, Prices You’ll Love!</h2>
+                <p class="text-xl">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>staples, we’ve got you covered every day!</p>
+            </div>
+            <div class="mt-9 p-3">
+                <img class="md:w-[1031px] md:h-[838px] mx-auto" src="./c2-assets/hero-vegetables.png" alt="">
+            </div>
+        </section>
+        <!-- banner -->
+    </header>
+    <main>
+        <section class="container mx-auto">
+            <h2>Services</h2>
+            <div>
+                <div>
+                    <img src="./c2-assets/service.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
+
 </html>
