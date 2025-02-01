@@ -1,0 +1,31 @@
+.text-animation-banner{
+    animation: text-animation 4s infinite ;
+}
+@keyframes text-animation {
+    0% {
+        transform: rotate(0deg);
+        color: #e3cec9;
+    }
+    25% {
+        transform: rotate(-2deg);
+        color: #33ff57;
+    }
+    50% {
+        transform: rotate(2deg);
+        color: #5265bc;
+    }
+    75% {
+        transform: rotate(-2deg);
+        color: #75fb90;
+    }
+    100% {
+        transform:rotate(0deg);
+        color: #f1e4e1;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .display-none{
+        display: none;
+    }
+}
